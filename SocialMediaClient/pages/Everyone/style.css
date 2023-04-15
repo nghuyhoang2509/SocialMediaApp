@@ -1,0 +1,23 @@
+.label_name {
+  color: #4ad97c;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.list_box {
+  padding: 20px 30px;
+}
+
+.container_item {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px;
+  margin: 5px 0px;
+}
+
+.window {
+  background-image: url("https://f-code.tech/static/media/background.5d17ffe36988d38fdec1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

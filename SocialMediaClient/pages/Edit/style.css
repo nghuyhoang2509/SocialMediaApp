@@ -1,0 +1,33 @@
+.green_bg{
+  background: #4ad97c;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+.white_bg{
+  background: #f6f5f4;
+}
+.shadow {
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.text{
+  font-weight: bold;
+}
+.round_corner{
+  border-radius: 13px;
+  border-style: none;
+}
+.green_text{
+  color: #4ad97c;
+  font-weight: bold;
+}
+#edit_label{
+  font-size:x-large;
+  border-radius: 13px 13px 0px 0px;
+}
+
+#edit_check{
+  font-size: smaller;
+}
+
+

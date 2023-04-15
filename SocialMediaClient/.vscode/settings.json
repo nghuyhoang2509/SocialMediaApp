@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "sdl.h": "c",
+        "stdio.h": "c",
+        "gtk.h": "c",
+        "jansson.h": "c",
+        "stdlib.h": "c",
+        "gtkx.h": "c",
+        "libgen.h": "c",
+        "unistd.h": "c",
+        "math.h": "c",
+        "string.h": "c",
+        "cstdlib": "c",
+        "handle.h": "c",
+        "json.h": "c",
+        "regex.h": "c",
+        "tre.h": "c",
+        "curl.h": "c",
+        "call_api.h": "c",
+        "pthread.h": "c",
+        "arraylist.h": "c"
+    }
+}

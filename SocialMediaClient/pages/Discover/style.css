@@ -1,0 +1,41 @@
+.h1 {
+  color: white;
+  font-family: "Klavia", Times, serif;
+  font-weight: 900;
+  font-size: 28px;
+  font-style: normal;
+  background-color: #4ad97c;
+}
+.h2 {
+  color: #f2bc1b;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.window {
+  background-image: url("https://f-code.tech/static/media/background.5d17ffe36988d38fdec1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body {
+  color: black;
+  background-color: white;
+  padding: 20px 10px;
+  margin: 20px 0px;
+  border: 1px solid black;
+  box-shadow: 1px 1px 2px black;
+}
+
+.post {
+  padding: 10px 15px;
+  margin: 0px 200px;
+}
+
+.list_box {
+  background-color: transparent;
+}
+
+.btn_back_dashboard {
+  background-color: transparent;
+}

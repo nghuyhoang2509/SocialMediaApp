@@ -1,0 +1,57 @@
+.cancel {
+  color: #f2bc1b;
+  font-weight: 900;
+}
+
+.h1 {
+  color: white;
+  font-weight: 900;
+  font-size: 28px;
+  font-style: normal;
+  background-color: #4ad97c;
+}
+.body {
+  color: black;
+  background-color: white;
+  padding: 20px 10px;
+  margin: 20px 0px;
+  border: 1px solid black;
+  box-shadow: 1px 1px 2px black;
+}
+.window {
+  background-image: url("https://f-code.tech/static/media/background.5d17ffe36988d38fdec1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gtk_create {
+  color: #4ad97c;
+  font-weight: 900;
+}
+.h2 {
+  color: #f2bc1b;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.list_box {
+  background-color: transparent;
+}
+
+.post {
+  padding: 10px 15px;
+  margin: 0px 200px;
+}
+
+.round_corner {
+  border-radius: 13px;
+  border-style: none;
+}
+.green_bg {
+  background: #4ad97c;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+.shadow {
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+}
+

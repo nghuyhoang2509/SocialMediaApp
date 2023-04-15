@@ -1,0 +1,24 @@
+.label_name {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.button {
+  color: #4ad97c;
+  background: white;
+  border: none;
+  font-weight: bold;
+}
+
+.container_button {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 100px;
+  box-shadow: 1px 1px 2px black;
+}
+
+.windows {
+  background-image: url("https://f-code.tech/static/media/background.5d17ffe36988d38fdec1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

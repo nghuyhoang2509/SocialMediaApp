@@ -1,0 +1,48 @@
+.mail_partner {
+  font-size: 20px;
+  font-weight: 800;
+  background-color: #ffffff;
+}
+
+.container_list_message {
+  padding-top: 20px;
+  background-color: #f6f8fc;
+}
+
+.window {
+  background-color: #f6f8fc;
+  border-radius: 15px;
+}
+
+.container_message {
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 5px 10px;
+  margin: 3px 3px;
+}
+
+.partner_message {
+  background-color: #ffffff;
+}
+
+.my_message {
+  background-color: #4ad97c;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+.input_message {
+  margin: 10px 25px;
+  padding: 5px 10px;
+  background-color: #f6f8fc;
+}
+
+.box {
+  background-color: #ffffff;
+}
+
+.btn_send_message {
+  color: black;
+  font-weight: 800;
+}

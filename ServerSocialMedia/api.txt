@@ -1,0 +1,122 @@
+*****multipart/form-data
+data: <JSON>
+*****
+POST http://localhost:9002/login
+Request data={"mail":"nghuyhoang2509@gmail.com", "password":"okokokok1"}
+Validate before request: mail: format mail, 8<=password<=24
+Response:
+    1: {
+            "_id": {
+                "$oid": "641439499f0f417ffa03affd"
+            },
+            "password": "okokokok1",
+            "fullname": "Nguyễn Huy Hoàng",
+        }
+    2: {"error":"mail or password incorrect"}
+
+POST http://localhost:9002/register
+Request data={"mail":"nghuyhoang2509@gmail.com", "password":"okokokok1","fullname":"Nguyễn Huy Hoàng"}
+Validate before request: mail: format mail, 8<=password<=24, 8<=fullname<=50
+Response:
+    1: {"error": "Mail already exists"}
+    2: {"success":"Register successful"}
+    3: {"error":"There is a problem, please try again"}
+
+POST http://localhost:9002/edit-account
+Request data={"_id":"641439499f0f417ffa03affd","fullname":"Nguyễn Hoàng Huy","password":"okokokok1"}
+Validate before request:  8<=password<=24, 8<=fullname<=50, id (userId) no emtpy
+Response 
+    1: {
+        "_id": "641439499f0f417ffa03affd",
+        "fullname": "Nguyễn Hoàng Huy",
+        "password": "okokokok1"
+        }
+    2: {"error":"There is a problem, please try again"}
+
+POST http://localhost:9002/create-post
+Request data={"userId":"6416b9476ca3fbacdd01ed61","title":"Connect MongoDB with c","content":"Firstly install libmongoc"}
+Validate before request: 20<=title<=200, 200<=content, userId no empty
+Response 
+    1: {"success":"Create successful"}
+    2: {"error":"There is a problem, please try again"}
+
+POST http://localhost:9002/edit-post
+Request data={"_id":"6416bf16860fead290087081","title":"Connect MongoDB with c","content":"Firstly install libmongoc and bson"}
+Validate before request: 20<=title<=200, 200<=content, id (postId) no empty
+Response 
+    1: {
+        "_id": "6416bf16860fead290087081",
+        "title": "Connect MongoDB with c",
+        "content": "Firstly install libmongoc and bson"
+        }
+    2: {"error":"There is a problem, please try again"}
+
+POST http://localhost:9002/delete-post
+Request data={"_id":"6416bf16860fead290087081"}
+Validate before request: id (postId) no empty
+Response 
+    1: {"success":"Delete successful"}
+    2: {"error":"There is a problem, please try again"}
+
+POST http://localhost:9002/all-post
+Request data={}
+Validate before request: 
+Response 
+    1: {
+        "posts": [
+            "{ \"_id\" : { \"$oid\" : \"6416e068410a035cabab865b\" }, \"title\" : \"Mongodb với nodejs\", \"content\" : \"tạo server backend giữa mongodb và nodejs\" }"
+            ]
+        }
+    2: {"posts":[ ]}
+**** Mỗi phần tử của posts là string chưa được parse ra json
+
+POST http://localhost:9002/post
+Request data={"userId":"6416b9476ca3fbacdd01ed61"}
+Validate before request: userId no empty
+Response 
+    1: {
+        "posts": [
+            "{ \"_id\" : { \"$oid\" : \"6416e068410a035cabab865b\" }, \"title\" : \"Mongodb với nodejs\", \"content\" : \"tạo server backend giữa mongodb và nodejs\" }"
+            ]
+        }
+    2: {"posts":[ ]}
+**** Mỗi phần tử của posts là string chưa được parse ra json
+
+POST http://localhost:9002/everyone
+Request data={}
+Validate before request: userId no empty
+Response 
+    1: {
+        "mail": [
+            "trieuhoanglam0811@gmail.com",
+            "nghuyhoang2509@gmail.com",
+            "nhhoctap@gmail.com"
+        ],
+        "userId": [
+            "6415f381a5efcd1aa70716a1",
+            "6416b9476ca3fbacdd01ed61",
+            "64170644382317466c01ea91"
+        ]
+    }
+    2: {"mail":[ ], "userId":[]}
+
+
+SOCKET
+
+send to server
+status 1 is send message
+status 0 is exit
+send to client
+status 1 is send message success
+status 2 is user not online
+status 0 is send message fail
+
+STEP to connect server
+1. send mail Firstly
+2. send json 
+{"status":"1","from":"nghuyhoang2509@gmail.com","to":"nghuyhoang2509@gmail.com","data":"hello"}
+{"status":"2","from":"nhhhoctap@gmail.com","to":"nghuythien2908@gmail.com","data":"hello"} not online
+3. disconnected 
+{
+"status":"0", 
+}
